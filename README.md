@@ -1,3 +1,3 @@
 # levelsWatchFace
-a watch face for Bangle.js watch
+a watch face for Bangle.js watch  
 ![](appScreenShot.png)
