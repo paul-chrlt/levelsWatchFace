@@ -10,6 +10,7 @@ var reverseSec = false;
 function drawWatchTicks(column1,column2,column3){
   var ySec;
   var i;
+  g.setColor(0.8,0.8,0.8);
   for(i=0;i<25;i=i+4){
     g.drawString(("0" + i).substr(-2),column1,i/24*240);
   }
@@ -43,7 +44,6 @@ setInterval(function(){
   if(s == 0){reverseSec = !reverseSec;}
   g.clear();
   g.setFont("4x6",1);
-  drawWatchTicks(x1,x2,x3);
   y1 = h/24*240;
   y2 = m/60*240;
   if(reverseSec){
@@ -55,6 +55,7 @@ setInterval(function(){
   g.setColor(0.2,0.2,0.2);
   trianglePath = [x1,y1,x2,y2,x3,y3];
   g.fillPoly(trianglePath,true);
+  drawWatchTicks(x1,x2,x3);
   g.setFont("4x6",2);
   textCircle(x1,y1,h);
   textCircle(x2,y2,m);
