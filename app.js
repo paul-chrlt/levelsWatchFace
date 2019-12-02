@@ -1,3 +1,4 @@
+E.setTimeZone(1);
 g.clear();
 var x1=40;
 var x2=105;
